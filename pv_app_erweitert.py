@@ -144,6 +144,8 @@ for quote in quotes:
 # Plotting
 fig1, ax1 = plt.subplots()
 ax1.plot(quotes, np.array(effective_prices)*100, marker="o", label="Effektiver Mieterstrompreis (ct/kWh)")
+for x, y in zip(quotes, np.array(effective_prices)*100):
+    ax1.annotate(f"{y:.1f}", (x, y), textcoords="offset points", xytext=(0, 5), ha='center', fontsize=8)
 ax1.set_xlabel("PV-Nutzerquote (%)")
 ax1.set_ylabel("Preis (ct/kWh)")
 ax1.set_title("Effektiver Mieterstrompreis je nach Nutzerquote")
@@ -153,6 +155,8 @@ st.pyplot(fig1)
 
 fig2, ax2 = plt.subplots()
 ax2.plot(quotes, profits, marker="s", color="green", label="Jährlicher Gewinn (€)")
+for x, y in zip(quotes, profits):
+    ax2.annotate(f"{y:.0f}", (x, y), textcoords="offset points", xytext=(0, 5), ha='center', fontsize=8)
 ax2.set_xlabel("PV-Nutzerquote (%)")
 ax2.set_ylabel("Jährlicher Gewinn (€)")
 ax2.set_title("Wirtschaftlichkeit der PV-Anlage je nach Nutzerquote")
