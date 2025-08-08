@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="PV-Projekt-Kalkulation", layout="wide")
 
-st.title("☀️ PV-Projekt-Kalkulation Dashboard")
+st.title("☀️ Mareks PV-Projekt-Kalkulation Dashboard V1.0 for Qrauts AG")
 
 # Eingabemaske
 st.sidebar.header("🔧 Eingabeparameter")
@@ -40,7 +40,7 @@ inflation_rate = st.sidebar.slider("Strompreissteigerung (%)", 0.0, 10.0, 2.0) /
 
 # Szenarien
 scenarios = {
-    "Basis": 1.0,
+    "Bundesdurchschnitt": 1.0,
     "Optimistisch": 1.1,
     "Pessimistisch": 0.9
 }
