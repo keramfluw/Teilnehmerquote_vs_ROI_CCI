@@ -93,8 +93,8 @@ lcoe = capex_total / (size_kwp * yield_kwh_kwp * system_efficiency / 100 * lifet
 
 col1, col2, col3 = st.columns(3)
 col1.metric("Amortisationsjahr", amort_year)
-col2.metric("geschätzte IRR", f"{irr_estimate:.2%}" if irr_estimate else "n/a")
-col3.metric("LCOE (€/kWh)", f"{lcoe:.4f}")
+col2.metric("geschätzte IRR-Interne Rendite", f"{irr_estimate:.2%}" if irr_estimate else "n/a")
+col3.metric("LCOE-Stromgestehungskosten (€/kWh)", f"{lcoe:.4f}")
 
 st.caption("Hinweis: Die Berechnungen basieren auf vereinfachten Annahmen und dienen der Projektbewertung. Autor:Marek Wulff")
 
