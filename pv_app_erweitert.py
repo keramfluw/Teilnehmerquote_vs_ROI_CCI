@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="PV-Projekt-Kalkulation", layout="wide")
 
-st.title("☀️ Kurts PV-Projekt-Kalkulation Dashboard V1.0 for Qrauts AG")
+st.title("☀️ PV-Projekt-Kalkulation Dashboard V1.0 for Qrauts AG")
 
 # Eingabemaske
 st.sidebar.header("🔧 Eingabeparameter")
